@@ -4,7 +4,7 @@ import xmltodict
 app = Flask(__name__)
 
 
-@app.route('/receiveRequests', methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS', 'HEAD'])
+@app.route('/receiveRequests', methods=['POST'])
 def receiveRequests():
     try:
        
